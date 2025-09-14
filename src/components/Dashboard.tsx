@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Search, Plus, Users } from 'lucide-react';
+import { Search, Plus } from 'lucide-react';
+import businessIcon from '@/assets/business-icon.png';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -24,7 +25,7 @@ const Dashboard = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-primary text-primary-foreground">
-                <Users className="h-5 w-5" />
+                <img src={businessIcon} alt="Business" className="h-5 w-5" />
               </div>
               <h1 className="text-xl font-semibold text-foreground">User Dashboard</h1>
             </div>
